@@ -10,7 +10,7 @@ class calculator:
     def calculate(self):
         match self.operation.lower():
             case "div" :
-                if self.val1!=0:
+                if self.val2!=0:
                     return self.val1/self.val2
                 else:
                     return "Infinity"
