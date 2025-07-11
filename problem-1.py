@@ -10,7 +10,10 @@ class calculator:
     def calculate(self):
         match self.operation.lower():
             case "div" :
-                return self.val1/self.val2
+                if self.val1!=0:
+                    return self.val1/self.val2
+                else:
+                    return "Infinity"
             case "mul" :
                 return self.val1*self.val2
             case "add" :
